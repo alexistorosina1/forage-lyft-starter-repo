@@ -13,3 +13,7 @@ class SternmanEngine(Car, ABC):
             return True
         else:
             return False
+        
+
+    def needs_service(self):
+        return self.engine_should_be_serviced()
